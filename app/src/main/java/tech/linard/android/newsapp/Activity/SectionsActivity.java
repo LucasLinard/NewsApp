@@ -1,10 +1,7 @@
 package tech.linard.android.newsapp.Activity;
 
 import android.app.LoaderManager;
-import android.content.Context;
-import android.content.Intent;
 import android.content.Loader;
-import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -12,7 +9,6 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-import java.sql.Array;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,9 +16,9 @@ import tech.linard.android.newsapp.Model.Section;
 import tech.linard.android.newsapp.R;
 import tech.linard.android.newsapp.Util.SectionLoader;
 
-public class MainActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<List<Section>> {
+public class SectionsActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<List<Section>> {
 
-    public static final String LOG_TAG = MainActivity.class.getName();
+    public static final String LOG_TAG = SectionsActivity.class.getName();
     public static final String SECTION_REQUEST_URL
             = "http://content.guardianapis.com/sections?&api-key=065324a3-0dff-454a-a25a-28a07cca5dda&format=json";
     private static final int SECTION_LOADER_ID = 1;

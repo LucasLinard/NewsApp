@@ -1,7 +1,6 @@
 package tech.linard.android.newsapp.Activity;
 
 import android.app.LoaderManager;
-import android.content.Context;
 import android.content.Intent;
 import android.content.Loader;
 import android.content.SharedPreferences;
@@ -19,13 +18,11 @@ import android.widget.ListView;
 import java.util.ArrayList;
 import java.util.List;
 
-import tech.linard.android.newsapp.Model.Section;
 import tech.linard.android.newsapp.Model.Story;
 import tech.linard.android.newsapp.R;
-import tech.linard.android.newsapp.Util.SectionLoader;
 import tech.linard.android.newsapp.Util.StoryLoader;
 
-import static tech.linard.android.newsapp.Activity.MainActivity.LOG_TAG;
+import static tech.linard.android.newsapp.Activity.SectionsActivity.LOG_TAG;
 
 public class StoriesActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<List<Story>> {
     private static final int STORY_LOADER_ID = 2;

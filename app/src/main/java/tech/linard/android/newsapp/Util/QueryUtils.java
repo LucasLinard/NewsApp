@@ -1,9 +1,5 @@
 package tech.linard.android.newsapp.Util;
 
-import android.content.Context;
-import android.content.SharedPreferences;
-import android.net.Uri;
-import android.util.EventLog;
 import android.util.Log;
 
 import org.json.JSONArray;
@@ -16,7 +12,6 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
-import java.net.URI;
 import java.net.URL;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
@@ -28,7 +23,7 @@ import tech.linard.android.newsapp.Model.Story;
 /**
  * Created by lucas on 30/11/16.
  */
-import static tech.linard.android.newsapp.Activity.MainActivity.LOG_TAG;
+import static tech.linard.android.newsapp.Activity.SectionsActivity.LOG_TAG;
 
 public final class QueryUtils {
     private QueryUtils() {
