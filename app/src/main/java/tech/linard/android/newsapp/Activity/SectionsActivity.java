@@ -36,13 +36,11 @@ public class SectionsActivity extends AppCompatActivity implements LoaderManager
         sectionsListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                // Section currentSection = mAdapter.getItem(i);
-                // SharedPreferences sharedPref = getPreferences(Context.MODE_PRIVATE);
-                // SharedPreferences.Editor editor = sharedPref.edit();
-                // editor.putBoolean("SECTION_SAVED", true);
-                // editor.putString(getString(R.string.saved_section), currentSection.getId());
-                // editor.commit();
-                // startActivity(new Intent(getApplicationContext(), StoriesActivity.class));
+
+                // currently this activity is not used. I kept it here because in
+                // the future I will use this Activity, the SectionLoader and Section Adapter.
+
+
             }
         });
         LoaderManager loaderManager = getLoaderManager();
